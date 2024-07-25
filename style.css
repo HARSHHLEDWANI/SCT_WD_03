@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: mintcream; /* Mint green background */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: lightgray;
+}
+#reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#player-indicator {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+#score {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: mintcream; /* Mint green background */
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#player-indicator {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: lightgray;
+}
+
+#reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@keyframes highlight {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: lightgreen;
+    }
+}
+
+.cell.highlight {
+    animation: highlight 0.5s ease-in-out;
+}
+
+#score {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
